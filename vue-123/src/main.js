@@ -13,7 +13,6 @@ import routes from './config/routes'
 import api from './config/api'
 // 6.将API方法绑定到全局
 Vue.prototype.$api = api
-Vue.config.productionTip = false
 
 // 使用配置文件规则
 const router = new VueRouter({
@@ -22,8 +21,7 @@ const router = new VueRouter({
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
-  template: '<App/>',
-  components: { App }
+  el: '#app',
+  render: (h) => h(App)
 })

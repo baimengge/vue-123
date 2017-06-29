@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <router-view class="value" keep-alive transition transition-mode="out-in"></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  component: {}
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
