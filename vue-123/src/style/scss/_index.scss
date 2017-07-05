@@ -2,10 +2,14 @@
 	font-family: '微软雅黑';
 	.title{
 		color: #92EEF9;
+		font-size: 25px;
 	}
 	ul{
 		li{
 			list-style: none;
+			text-align: left;
+			border-top: 1px solid #ddd;
+			padding: 5px;
 		}
 	}
 }
