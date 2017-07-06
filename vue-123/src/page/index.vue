@@ -1,5 +1,6 @@
 <template>
   <div class="index">
+  	<el-button type="info" size="small" class="index_btn" @click="$router.push('/content')">登录</el-button>
     <h1 class="title">选择恐惧症的福音！教你认清MVC，MVP和MVVM</h1>
     <ul>
     	<li v-for="item in lists">{{item.title}}</li>
@@ -9,6 +10,7 @@
 
 <script>
 	export default{
+		// state:驱动应用的数据源
 		data() {
 			return {
 				lists: []
@@ -18,6 +20,7 @@
 			// 组件创建完后获取数据，这个就是vue生命周期的创建完成周期
 			this.get_data();
 		},
+		// actions:响应在view上的用户输入导致的状态变化
 		methods: {
 			get_data: function (params) {
 				if (!params) params = {}

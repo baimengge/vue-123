@@ -13,6 +13,12 @@ import routes from './config/routes'
 import api from './config/api'
 // 6.将API方法绑定到全局
 Vue.prototype.$api = api
+import Vuex from 'vuex'
+Vue.use(Vuex)
+// 引入 Element
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
+Vue.use(ElementUI)
 
 // 使用配置文件规则
 const router = new VueRouter({
